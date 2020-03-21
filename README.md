@@ -6,8 +6,6 @@
    **base repo:** https://github.com/gruntwork-io/terraform-google-gke   
    **example source:** https://github.com/gruntwork-io/terraform-google-gke/tree/master/examples/gke-private-tiller  
 
-Note: All steps should persist across Cloud Shell restarts(except last kubergrunt step).
-
 ### Set up: ###
 1. Create GCP Account  
 2. Activate Cloud Shell (upper right corner, far left)   
@@ -36,10 +34,12 @@ Note: All steps should persist across Cloud Shell restarts(except last kubergrun
 		 **^^^^ Step doesn't persist across Cloud Shell restarts ^^^^**
 4. Create GCP Project   
     NOTE: in our example, we have terra-gke-jumpstart. HOWEVER replace this with your unique project name all throughout following steps
+
     ```gcloud projects create terra-gke-jumpstart```
 5. Enable (create or link) Billing Account for Project  
     https://console.developers.google.com/project/terra-gke-jumpstart/settings   
 6. Enable Proper Apis for Project
+
     ```gcloud services enable compute.googleapis.com --project terra-gke-jumpstart```   
     
     ```gcloud services enable container.googleapis.com --project terra-gke-jumpstart```   

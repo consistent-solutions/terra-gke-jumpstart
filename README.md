@@ -26,12 +26,12 @@
 	  ```
       mkdir ~/bin/
       wget -O ~/bin/kubergrunt https://github.com/gruntwork-io/kubergrunt/releases/download/v0.5.11/kubergrunt_linux_amd64   
-		  chmod +x ~/bin/kubergrunt
-		  echo 'export PATH="~/bin/:$PATH"' >> .bashrc   
-		  source .bashrc
-		  sudo ln -s ~/bin/kubergrunt /usr/local/bin/
+      chmod +x ~/bin/kubergrunt
+      echo 'export PATH="~/bin/:$PATH"' >> .bashrc   
+      source .bashrc
+      sudo ln -s ~/bin/kubergrunt /usr/local/bin/
     ```   
-		 **^^^^ Step doesn't persist across Cloud Shell restarts ^^^^**
+
 4. Create GCP Project   
     NOTE: in our example, we have terra-gke-jumpstart. HOWEVER replace this with your unique project name all throughout following steps
 
